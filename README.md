@@ -1,0 +1,92 @@
+
+---
+
+## 🌐 URL Aplikasi Online
+| Komponen | URL |
+|-----------|------|
+| 🔧 **Backend API** | [http://agussiswanto7005.free.nf/agus_playground/records/pengunjung](http://agussiswanto7005.free.nf/agus_playground/records/pengunjung) |
+| 💻 **Frontend (Read Only)** | [http://agussiswanto7005.free.nf/agus_playground/frontend.html](http://agussiswanto7005.free.nf/agus_playground/frontend.html) |
+| 🧩 **Frontend (CRUD Lengkap)** | [http://agussiswanto7005.free.nf/agus_playground/frontend_crud.html](http://agussiswanto7005.free.nf/agus_playground/frontend_crud.html) |
+
+---
+
+## ⚙️ Fitur Aplikasi
+✅ Menggunakan **PHP-CRUD-API** untuk backend  
+✅ CRUD penuh (Create, Read, Update, Delete)  
+✅ Desain frontend dengan **tema coklat gradasi**  
+✅ Fetch API untuk komunikasi antar server  
+✅ Database MySQL dengan minimal 10 tabel  
+✅ Hosting di platform **(https://www.infinityfree.com/)**  
+
+---
+
+## 🧮 Daftar Tabel Database
+
+| No | Nama Tabel | Keterangan |
+|----|-------------|------------|
+| 1 | `pengunjung` | Data anak & pendamping |
+| 2 | `pegawai` | Data pegawai playground |
+| 3 | `tiket` | Jenis & harga tiket |
+| 4 | `transaksi` | Riwayat pembelian tiket |
+| 5 | `jadwal_kerja` | Jadwal kerja pegawai |
+| 6 | `jadwal_main` | Jadwal kegiatan bermain |
+| 7 | `wahana` | Data wahana yang tersedia |
+| 8 | `maintenance` | Jadwal perawatan wahana |
+| 9 | `feedback` | Masukan / kritik pengunjung |
+| 10 | `user` | Akun pengguna sistem |
+
+---
+
+## 📸 Screenshot Hasil
+
+### 🔹 Backend (API Tiap Tabel)
+| Tabel | Screenshot |
+|--------|-------------|
+| Pengunjung | ![BE Pengunjung](screenshots/BE%20Pengunjung.png) |
+| Pegawai | ![BE Pegawai](screenshots/BE%20Pegawai.png) |
+| Tiket | ![BE Tiket](screenshots/BE%20Tiket.png) |
+| Transaksi | ![BE Transaksi](screenshots/BE%20Transaksi.png) |
+| Jadwal Kerja | ![BE Jadwal_kerja](screenshots/BE%20Jadwal_kerja.png) |
+| Jadwal Main | ![BE Jadwal_main](screenshots/BE%20Jadwal_main.png) |
+| Wahana | ![BE Wahana](screenshots/BE%20Wahana.png) |
+| Maintenance | ![BE Maintenance](screenshots/BE%20Maintenance.png) |
+| Feedback | ![BE Feedback](screenshots/BE%20Feedback.png) |
+| User | ![BE User](screenshots/BE%20User.png) |
+
+---
+
+### 🔸 Frontend (Tampilan Aplikasi)
+| Tampilan | Screenshot |
+|-----------|-------------|
+| Halaman Utama | ![Frontend](screenshots/frontend.png) |
+| CRUD Lengkap | ![Frontend CRUD](screenshots/frontend_crud.png) |
+
+---
+
+## 🧠 Teknologi yang Digunakan
+| Komponen | Teknologi |
+|-----------|------------|
+| **Backend** | PHP 8 + PHP-CRUD-API |
+| **Frontend** | HTML5, CSS3, JavaScript (Fetch API) |
+| **Database** | MySQL |
+| **Hosting** | sql305.infinityfree.com |
+| **Version Control** | GitHub |
+
+---
+
+## 🚀 Cara Menjalankan
+1. Clone / download repository ini  
+   ```bash
+   git clone https://github.com/agussiswanto7005/2025-AgusSiswanto-UTS-WebService.git
+2. Pastikan server lokal (XAMPP/Laragon) aktif
+
+3. Import database MySQL sesuai tabel di atas
+
+4. Jalankan backend (PHP CRUD API)
+
+Buka frontend_crud.html → aplikasi siap digunakan
+
+📬 Kontak
+
+📧 Email: agus.siswanto@mhs.unisbank.ac.id
+🌐 GitHub: https://github.com/agussiswanto7005
