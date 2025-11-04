@@ -60,8 +60,8 @@
 ### 🔸 Frontend (Tampilan Aplikasi)
 | Tampilan | Screenshot |
 |-----------|-------------|
-| Halaman Utama | ![Frontend](screenshots/frontend.png) |
-| CRUD Lengkap | ![Frontend CRUD](screenshots/frontend_crud.png) |
+| Halaman Utama | ![Frontend](SCREENSHOOT/SC%20FE/frontend.png) |
+| CRUD Lengkap | ![Frontend CRUD](SCREENSHOOT/SC%20FE/frontend_crud.png) |
 
 ---
 
@@ -90,5 +90,5 @@ Buka frontend_crud.html → aplikasi siap digunakan
 
 📬 Kontak
 
-📧 Email: agus.siswanto@mhs.unisbank.ac.id
+📧 Email: agussiswanto7005@mhs.unisbank.ac.id
 🌐 GitHub: https://github.com/agussiswanto7005
