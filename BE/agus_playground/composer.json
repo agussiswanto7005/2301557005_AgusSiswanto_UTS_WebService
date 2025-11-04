@@ -1,0 +1,11 @@
+{
+    "name": "lenovo/apicoba",
+    "autoload": {
+        "psr-4": {
+            "Lenovo\\Apicoba\\": "src/"
+        }
+    },
+    "require": {
+        "mevdschee/php-crud-api": "^2.14"
+    }
+}
