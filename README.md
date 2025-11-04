@@ -40,18 +40,20 @@
 ## 📸 Screenshot Hasil
 
 ### 🔹 Backend (API Tiap Tabel)
+### 🧩 Backend (API Tiap Tabel)
+
 | Tabel | Screenshot |
-|--------|-------------|
-| Pengunjung | ![BE Pengunjung](screenshots/BE%20Pengunjung.png) |
-| Pegawai | ![BE Pegawai](screenshots/BE%20Pegawai.png) |
-| Tiket | ![BE Tiket](screenshots/BE%20Tiket.png) |
-| Transaksi | ![BE Transaksi](screenshots/BE%20Transaksi.png) |
-| Jadwal Kerja | ![BE Jadwal_kerja](screenshots/BE%20Jadwal_kerja.png) |
-| Jadwal Main | ![BE Jadwal_main](screenshots/BE%20Jadwal_main.png) |
-| Wahana | ![BE Wahana](screenshots/BE%20Wahana.png) |
-| Maintenance | ![BE Maintenance](screenshots/BE%20Maintenance.png) |
-| Feedback | ![BE Feedback](screenshots/BE%20Feedback.png) |
-| User | ![BE User](screenshots/BE%20User.png) |
+|-------|-------------|
+| Pengunjung | ![BE Pengunjung](SCREENSHOOT/SC%20BE/BE%20Pengunjung.png?raw=true) |
+| Pegawai | ![BE Pegawai](SCREENSHOOT/SC%20BE/BE%20Pegawai.png) |
+| Tiket | ![BE Tiket](SCREENSHOOT/SC%20BE/BE%20Tiket.png) |
+| Transaksi | ![BE Transaksi](SCREENSHOOT/SC%20BE/BE%20Transaksi.png) |
+| Jadwal Kerja | ![BE Jadwal_kerja](SCREENSHOOT/SC%20BE/BE%20Jadwal_kerja.png) |
+| Jadwal Main | ![BE Jadwal_main](SCREENSHOOT/SC%20BE/BE%20Jadwal_main.png) |
+| Wahana | ![BE Wahana](SCREENSHOOT/SC%20BE/BE%20Wahana.png) |
+| Maintenance | ![BE Maintenance](SCREENSHOOT/SC%20BE/BE%20Maintenance.png) |
+| Feedback | ![BE Feedback](SCREENSHOOT/SC%20BE/BE%20Feedback.png) |
+| User | ![BE User](SCREENSHOOT/SC%20BE/BE%20User.png) |
 
 ---
 
@@ -77,7 +79,7 @@
 ## 🚀 Cara Menjalankan
 1. Clone / download repository ini  
    ```bash
-   git clone https://github.com/agussiswanto7005/2025-AgusSiswanto-UTS-WebService.git
+   git clone https://github.com/agussiswanto7005/2301557005_AgusSiswanto_UTS_WebService.git
 2. Pastikan server lokal (XAMPP/Laragon) aktif
 
 3. Import database MySQL sesuai tabel di atas
