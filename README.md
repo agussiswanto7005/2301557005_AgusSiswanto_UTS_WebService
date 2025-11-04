@@ -61,7 +61,7 @@
 | Tampilan | Screenshot |
 |-----------|-------------|
 | Halaman Utama | ![Frontend](SCREENSHOOT/SC%20FE/frontend.png) |
-| CRUD Lengkap | ![Frontend CRUD](SCREENSHOOT/SC%20FE/frontend_crud.png) |
+| CRUD Lengkap | ![Frontend CRUD](SCREENSHOOT/SC%20FE/frontend_Crud.png) |
 
 ---
 
