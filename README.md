@@ -43,10 +43,10 @@
 
 | Tabel | Screenshot |
 |-------|-------------|
-| Pengunjung | ![BE Pengunjung](SCREENSHOOT/SC%20BE/BE%20Pengunjung.png?raw=true) |
-| Pegawai | ![BE Pegawai](SCREENSHOOT/SC%20BE/BE%20Pegawai.png) |
-| Tiket | ![BE Tiket](SCREENSHOOT/SC%20BE/BE%20Tiket.png) |
-| Transaksi | ![BE Transaksi](SCREENSHOOT/SC%20BE/BE%20Transaksi.png) |
+| Pengunjung | [BE Pengunjung](SCREENSHOOT/SC%20BE/BE%20Pengunjung.png?raw=true) |
+| Pegawai | [BE Pegawai](SCREENSHOOT/SC%20BE/BE%20Pegawai.png) |
+| Tiket | [BE Tiket](SCREENSHOOT/SC%20BE/BE%20Tiket.png) |
+| Transaksi | [BE Transaksi](SCREENSHOOT/SC%20BE/BE%20Transaksi.png) |
 | Jadwal Kerja | ![BE Jadwal_kerja](SCREENSHOOT/SC%20BE/BE%20Jadwal_kerja.png) |
 | Jadwal Main | ![BE Jadwal_main](SCREENSHOOT/SC%20BE/BE%20Jadwal_main.png) |
 | Wahana | ![BE Wahana](SCREENSHOOT/SC%20BE/BE%20Wahana.png) |
