@@ -4,24 +4,180 @@
   <meta charset="UTF-8">
   <title>CRUD Pengunjung - Agus Siswanto</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
   <style>
-    body { font-family: 'Poppins', sans-serif; background: #f8ede3; margin: 0; padding: 20px; }
-    .container { max-width: 900px; margin: auto; background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);}
-    h1 { text-align: center; color: #6d4c41; }
-    form { margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 10px; }
-    input, button { padding: 8px 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 14px; }
-    input { flex: 1; }
-    button { background: #6d4c41; color: white; cursor: pointer; }
-    button:hover { background: #8d6e63; }
-    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
-    th { background: #6d4c41; color: white; }
-    td button { margin-right: 6px; border: none; padding: 5px 10px; border-radius: 5px; }
-    .edit { background: #ffb300; color: #fff; }
-    .delete { background: #d32f2f; color: #fff; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      /* Latar belakang bokeh luar */
+      background: url('https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg') center center/cover no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    /* Latar belakang playground animasi di dalam container */
+    .container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://img.freepik.com/free-vector/children-playground-scene_1308-16474.jpg?w=1400&t=st=1719225725~exp=1719226325~hmac=0257c918ee91090480fc3c4e098679f0f972b9a10336214a1a5665f973dd38a6');
+      background-repeat: no-repeat;
+      background-size: 120% auto;
+      z-index: -1;
+      opacity: 0.25;
+      filter: blur(3px) brightness(1.05);
+      border-radius: 18px;
+      animation: slowPan 25s infinite alternate ease-in-out;
+    }
+
+    /* Keyframes untuk animasi geser (pan) */
+    @keyframes slowPan {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    h1 {
+      text-align: center;
+      color: #4a148c;
+      font-weight: 700;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Penyesuaian Form CRUD */
+    form {
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Gaya Input yang disesuaikan */
+    input {
+      flex: 1 1 200px; /* Responsif */
+      padding: 10px 15px;
+      border-radius: 10px;
+      border: 2px solid #9c27b0;
+      outline: none;
+      font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      background-color: #f7f7f7;
+    }
+
+    /* Gaya Tombol Simpan (Ungu) */
+    button[type="submit"] {
+      flex-grow: 1;
+      padding: 10px 15px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(135deg, #9c27b0, #6a1b9a);
+      cursor: pointer;
+      transition: 0.2s;
+      position: relative;
+      z-index: 2;
+    }
+    button[type="submit"]:hover {
+      opacity: 0.9;
+    }
+
+    /* Gaya Tabel */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 25px;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      z-index: 2;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px 14px;
+      text-align: left;
+      font-size: 15px;
+      color: #444;
+    }
+
+    th {
+      background: linear-gradient(135deg, #9c27b0, #6a1b9a);
+      color: #fff;
+      text-transform: capitalize; /* Otomatis kapitalisasi header */
+    }
+
+    /* Latar tabel transparan */
+    tr {
+      background-color: rgba(255, 255, 255, 0.9);
+      transition: background-color 0.2s;
+    }
+    tr:nth-child(even) {
+      background-color: rgba(243, 232, 255, 0.9);
+    }
+    tr:hover {
+      background-color: rgba(227, 242, 253, 0.95);
+    }
+
+    /* Gaya Tombol Edit & Hapus (tetap kuning & merah) */
+    td button {
+      margin-right: 6px;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s;
+      font-family: 'Poppins', sans-serif;
+    }
+    td button:hover { opacity: 0.8; }
+    
+    .edit { background: #ffb300; }
+    .delete { background: #d32f2f; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: auto;
+      padding: 20px 0;
+      color: #fff;
+      font-size: 14px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+      position: relative;
+      z-index: 1;
+    }
   </style>
-</head>
+  </head>
 <body>
+
   <div class="container">
     <h1>CRUD Data Pengunjung</h1>
 
@@ -51,29 +207,43 @@
     </table>
   </div>
 
+  <footer>© 2025 - Agus Siswanto | Universitas Stikubank</footer>
+
   <script>
     const baseUrl = "http://agussiswanto7005.free.nf/agus_playground/records/pengunjung";
     const form = document.getElementById('formPengunjung');
     const tableBody = document.querySelector('#dataTable tbody');
 
     async function loadData() {
-      const res = await fetch(baseUrl);
-      const data = await res.json();
-      const records = data.records || [];
-      tableBody.innerHTML = records.map(r => `
-        <tr>
-          <td>${r.id}</td>
-          <td>${r.nama_anak}</td>
-          <td>${r.umur}</td>
-          <td>${r.nama_pendamping}</td>
-          <td>${r.no_hp}</td>
-          <td>${r.alamat}</td>
-          <td>
-            <button class="edit" onclick='editData(${JSON.stringify(r)})'>Edit</button>
-            <button class="delete" onclick='hapusData(${r.id})'>Hapus</button>
-          </td>
-        </tr>
-      `).join('');
+      // Menambahkan indikator loading sederhana
+      tableBody.innerHTML = '<tr><td colspan="7" style="text-align: center;">Memuat data...</td></tr>';
+      try {
+        const res = await fetch(baseUrl);
+        const data = await res.json();
+        const records = data.records || [];
+
+        if (records.length === 0) {
+          tableBody.innerHTML = '<tr><td colspan="7" style="text-align: center;">Data masih kosong.</td></tr>';
+          return;
+        }
+
+        tableBody.innerHTML = records.map(r => `
+          <tr>
+            <td>${r.id}</td>
+            <td>${r.nama_anak}</td>
+            <td>${r.umur}</td>
+            <td>${r.nama_pendamping}</td>
+            <td>${r.no_hp}</td>
+            <td>${r.alamat}</td>
+            <td>
+              <button class="edit" onclick='editData(${JSON.stringify(r)})'>Edit</button>
+              <button class="delete" onclick='hapusData(${r.id})'>Hapus</button>
+            </td>
+          </tr>
+        `).join('');
+      } catch (err) {
+        tableBody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: red;">Gagal memuat data: ${err.message}</td></tr>`;
+      }
     }
 
     async function tambahData(e) {
@@ -87,26 +257,28 @@
         alamat: form.alamat.value
       };
 
-      if (id) {
-        // UPDATE (PUT)
-        await fetch(`${baseUrl}/${id}`, {
-          method: "PUT",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload)
-        });
-        alert("Data berhasil diperbarui!");
-      } else {
-        // CREATE (POST)
-        await fetch(baseUrl, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload)
-        });
-        alert("Data berhasil ditambahkan!");
-      }
+      const method = id ? "PUT" : "POST";
+      const url = id ? `${baseUrl}/${id}` : baseUrl;
 
-      form.reset();
-      loadData();
+      try {
+        const res = await fetch(url, {
+          method: method,
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+
+        if (!res.ok) {
+          throw new Error('Respon server tidak OK: ' + res.status);
+        }
+
+        alert(id ? "Data berhasil diperbarui!" : "Data berhasil ditambahkan!");
+        form.reset();
+        form.id.value = ''; // Pastikan ID dikosongkan setelah submit
+        loadData();
+
+      } catch (err) {
+        alert('Terjadi kesalahan: ' + err.message);
+      }
     }
 
     function editData(data) {
@@ -116,13 +288,19 @@
       form.nama_pendamping.value = data.nama_pendamping;
       form.no_hp.value = data.no_hp;
       form.alamat.value = data.alamat;
+      // Scroll ke atas agar form terlihat
+      window.scrollTo(0, 0); 
     }
 
     async function hapusData(id) {
       if (confirm("Yakin hapus data ini?")) {
-        await fetch(`${baseUrl}/${id}`, { method: "DELETE" });
-        alert("Data berhasil dihapus!");
-        loadData();
+        try {
+          await fetch(`${baseUrl}/${id}`, { method: "DELETE" });
+          alert("Data berhasil dihapus!");
+          loadData();
+        } catch (err) {
+          alert('Gagal menghapus data: ' + err.message);
+        }
       }
     }
 
