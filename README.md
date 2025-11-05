@@ -39,7 +39,6 @@
 
 ## 📸 Screenshot Hasil
 
-### 🔹 Backend (API Tiap Tabel)
 ### 🧩 Backend (API Tiap Tabel)
 
 | Tabel | Screenshot |
