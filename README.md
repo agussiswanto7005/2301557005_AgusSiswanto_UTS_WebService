@@ -4,9 +4,9 @@
 ## 🌐 URL Aplikasi Online
 | Komponen | URL |
 |-----------|------|
-| 🔧 **Backend API** | [http://agussiswanto7005.free.nf/agus_playground/records/pengunjung](http://agussiswanto7005.free.nf/agus_playground/records/pengunjung) |
-| 💻 **Frontend (Read Only)** | [http://agussiswanto7005.free.nf/agus_playground/frontend.html](http://agussiswanto7005.free.nf/agus_playground/frontend.html) |
-| 🧩 **Frontend (CRUD Lengkap)** | [http://agussiswanto7005.free.nf/agus_playground/frontend_crud.html](http://agussiswanto7005.free.nf/agus_playground/frontend_crud.html) |
+| 🔧 **Backend API** | [http://agussiswanto7005.free.nf/agus_playground/records/pengunjung](https://agussiswanto7005.free.nf/agus_playground/records/pengunjung) |
+| 💻 **Frontend (Read Only)** | [http://agussiswanto7005.free.nf/agus_playground/frontend.html](https://agussiswanto7005.free.nf/agus_playground/frontend.html) |
+| 🧩 **Frontend (CRUD Pengunjung)** | [http://agussiswanto7005.free.nf/agus_playground/frontend_crud.html](https://agussiswanto7005.free.nf/agus_playground/frontend_crud.html) |
 
 ---
 
