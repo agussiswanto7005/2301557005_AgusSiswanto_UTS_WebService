@@ -47,20 +47,20 @@
 | Pegawai | [BE Pegawai](SCREENSHOOT/SC%20BE/BE%20Pegawai.png) |
 | Tiket | [BE Tiket](SCREENSHOOT/SC%20BE/BE%20Tiket.png) |
 | Transaksi | [BE Transaksi](SCREENSHOOT/SC%20BE/BE%20Transaksi.png) |
-| Jadwal Kerja | ![BE Jadwal_kerja](SCREENSHOOT/SC%20BE/BE%20Jadwal_kerja.png) |
-| Jadwal Main | ![BE Jadwal_main](SCREENSHOOT/SC%20BE/BE%20Jadwal_main.png) |
-| Wahana | ![BE Wahana](SCREENSHOOT/SC%20BE/BE%20Wahana.png) |
-| Maintenance | ![BE Maintenance](SCREENSHOOT/SC%20BE/BE%20Maintenance.png) |
-| Feedback | ![BE Feedback](SCREENSHOOT/SC%20BE/BE%20Feedback.png) |
-| User | ![BE User](SCREENSHOOT/SC%20BE/BE%20User.png) |
+| Jadwal Kerja | [BE Jadwal_kerja](SCREENSHOOT/SC%20BE/BE%20Jadwal_kerja.png) |
+| Jadwal Main | [BE Jadwal_main](SCREENSHOOT/SC%20BE/BE%20Jadwal_main.png) |
+| Wahana | [BE Wahana](SCREENSHOOT/SC%20BE/BE%20Wahana.png) |
+| Maintenance | [BE Maintenance](SCREENSHOOT/SC%20BE/BE%20Maintenance.png) |
+| Feedback | [BE Feedback](SCREENSHOOT/SC%20BE/BE%20Feedback.png) |
+| User | [BE User](SCREENSHOOT/SC%20BE/BE%20User.png) |
 
 ---
 
 ### 🔸 Frontend (Tampilan Aplikasi)
 | Tampilan | Screenshot |
 |-----------|-------------|
-| Halaman Utama | ![Frontend](SCREENSHOOT/SC%20FE/frontend.png) |
-| CRUD Lengkap | ![Frontend CRUD](SCREENSHOOT/SC%20FE/frontend_Crud.png) |
+| Halaman Utama | [Frontend](SCREENSHOOT/SC%20FE/frontend.png) |
+| CRUD Lengkap | [Frontend CRUD](SCREENSHOOT/SC%20FE/frontend_Crud.png) |
 
 ---
 
